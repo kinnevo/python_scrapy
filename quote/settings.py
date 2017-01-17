@@ -14,7 +14,17 @@ from credentials import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 BOT_NAME = 'quote'
 
 SPIDER_MODULES = ['quote.spiders']
-NEWSPIDER_MODULE = 'quote.spiders'
+NEWSPIDER_MODULE = 'quoute.spiders'
+
+
+
+
+# BOT_NAME = 'quote'
+
+# SPIDER_MODULES = ['quote.spiders']
+# NEWSPIDER_MODULE = 'quote.spiders'
+
+
 
 #FEED_URI     = 's3://general-scrapy-jazo/brainyquote/%(name)s.json'
 #IMAGES_STORE = 's3://general-scrapy-jazo/brainyquote_images'
@@ -78,9 +88,9 @@ ROBOTSTXT_OBEY = True
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 
 
-ITEM_PIPELINES = {
-     'quote.pipelines.MongoPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#      'quote.pipelines.MongoPipeline': 300,
+# }
 
 
 # ITEM_PIPELINES = {
